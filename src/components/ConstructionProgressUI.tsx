@@ -167,7 +167,7 @@ const CountdownTimer = ({ constructionEvents }: { constructionEvents: Constructi
       
       {/* Label */}
       <div className="countdown-completion-label">
-        <div className="countdown-completion-text">Predicted completion</div>
+        {/* <div className="countdown-completion-text">Predicted completion</div> */}
         <div className="countdown-target-date">
           {(() => {
             // Only use expected_date field (as requested)

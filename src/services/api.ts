@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://api.floorselector.convrse.ai';
 
 // Generic API Response interface
 export interface ApiResponse<T = unknown> {
