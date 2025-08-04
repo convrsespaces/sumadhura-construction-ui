@@ -1,0 +1,124 @@
+.countdown-container {
+  position: relative;
+  /* bottom: 2rem; */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  text-align: center;
+}
+
+.countdown-date {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #fde047;
+  margin-bottom: 1rem;
+}
+
+.countdown-timer {
+  background: linear-gradient(135deg, rgba(234, 181, 8, 0.1), rgba(249, 115, 22, 0.1));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(234, 181, 8, 0.2);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.countdown-timer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.countdown-unit {
+  text-align: center;
+}
+
+.countdown-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fde047;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.countdown-label {
+  font-size: 0.875rem;
+  color: #eab308;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.countdown-separator {
+  font-size: 1.5rem;
+  color: #eab308;
+  font-weight: 300;
+}
+
+.countdown-completion-label {
+  margin-top: 0.5rem;
+}
+
+.countdown-completion-text {
+  font-size: 0.875rem;
+  color: #eab308;
+  opacity: 0.8;
+}
+
+.countdown-target-date {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-top: 0.25rem;
+  opacity: 0.7;
+}
+
+.countdown-no-date {
+  text-align: center;
+  padding: 1rem;
+}
+
+.countdown-no-date-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+}
+
+.countdown-no-date-subtext {
+  font-size: 0.875rem;
+  color: #6b7280;
+  opacity: 0.8;
+}
+
+/* Custom scrollbar styles */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+} 
+
+.countdown-container,
+.countdown-timer,
+.countdown-date,
+.countdown-completion-label {
+  z-index: 10; /* Ensure these are below event boxes */
+}
+
+.progress-bars {
+  z-index: 5; /* Progress bars should be below event boxes */
+}
+
+.event-box {
+  z-index: 10000 !important; /* Ensure event boxes stay on top */
+}
